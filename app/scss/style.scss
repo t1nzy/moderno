@@ -351,3 +351,37 @@ span{
 }
 
 //end author
+
+//tutorial start
+
+.tutorial{
+  padding: 70px 0 120px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item{
+    max-width: 370px;
+    width: 100%;
+  }
+}
+.tutorial__item{
+  &-images{
+min-height: 270px;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+  }
+  &-name{
+    font-size: 24px;
+@include f700;
+line-height: 60px;
+padding: 30px 10px;
+text-align: center;
+color:$bg;
+
+  }
+}
+
+//tutorial end
