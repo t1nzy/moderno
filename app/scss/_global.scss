@@ -42,13 +42,14 @@ body {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 15px;
+
   }
 }
 
 .title{
     text-align: center;
     color:$bg;
-    
+    @include f700;
     font-size: 36px;
     font-weight: 700;
     line-height: 60px;
