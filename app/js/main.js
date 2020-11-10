@@ -12,7 +12,7 @@ $(function () {
   $('.product-slider__inner').slick({
     dots: true,
     arrows: false,
-    slidesToShow:4,
+    slidesToShow:2,
     slidesToScroll:4
   });
 });

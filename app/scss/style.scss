@@ -259,45 +259,41 @@
   padding: 0 15px;
 
   &:hover {
-    .advantages__item-images 
-    {
+    .advantages__item-images {
       background-color: $green;
     }
-    .advantages__item-title
-     {
+    .advantages__item-title {
       color: $green;
     }
-    .advantages__item-images
-     {
+    .advantages__item-images {
       svg {
         fill: #fff;
       }
     }
   }
-    &-images {
-      width: 114px;
-      height: 114px;
-      background-color: #fff;
-      border-radius: 50%;
+  &-images {
+    width: 114px;
+    height: 114px;
+    background-color: #fff;
+    border-radius: 50%;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto 30px;
-      transition: all 0.5s;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 30px;
+    transition: all 0.5s;
+  }
 
-    &-title {
-      margin-bottom: 25px;
-      font-size: 24px;
-      color: #fff;
-      @include f500;
-      transition: all 0.5s;
-    }
-    &-text {
-      font-size: 15px;
-    }
-  
+  &-title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #fff;
+    @include f500;
+    transition: all 0.5s;
+  }
+  &-text {
+    font-size: 15px;
+  }
 }
 .icosvg-2 {
   svg {
@@ -307,9 +303,51 @@
 }
 .icosvg-3 {
   svg {
-  /* Style for "heart" */
-width: 86px;
-height: 76px;
+    width: 86px;
+    height: 76px;
   }
 }
 //end advantages
+
+//start author
+
+.author {
+  background-image: url(../images/author-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+  &__box {
+     width: 100%;
+    max-width: 653px;
+    min-height: 216px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $green;
+  }
+  &__title {
+color: #ffffff;
+max-width: 260px;
+font-size: 29px;
+line-height: 30px;
+margin-right: 45px;
+
+span{
+  @include f700;  
+}
+  }
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #ffffff;
+  }
+}
+
+//end author
