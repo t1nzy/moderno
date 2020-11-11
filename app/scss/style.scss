@@ -320,10 +320,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  
+
   &__box {
-     width: 100%;
+    width: 100%;
     max-width: 653px;
     min-height: 216px;
     display: flex;
@@ -332,15 +331,15 @@
     background-color: $green;
   }
   &__title {
-color: #ffffff;
-max-width: 260px;
-font-size: 29px;
-line-height: 30px;
-margin-right: 45px;
+    color: #ffffff;
+    max-width: 260px;
+    font-size: 29px;
+    line-height: 30px;
+    margin-right: 45px;
 
-span{
-  @include f700;  
-}
+    span {
+      @include f700;
+    }
   }
   &__link {
     font-size: 18px;
@@ -354,34 +353,201 @@ span{
 
 //tutorial start
 
-.tutorial{
+.tutorial {
   padding: 70px 0 120px;
-  &__inner{
+  &__inner {
     display: flex;
     justify-content: space-between;
   }
-  &__item{
+  &__item {
     max-width: 370px;
     width: 100%;
   }
 }
-.tutorial__item{
-  &-images{
-min-height: 270px;
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-
+.tutorial__item {
+  &-images {
+    min-height: 270px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  &-name{
+  &-name {
     font-size: 24px;
-@include f700;
-line-height: 60px;
-padding: 30px 10px;
-text-align: center;
-color:$bg;
-
+    @include f700;
+    line-height: 60px;
+    padding: 30px 10px;
+    text-align: center;
+    color: $bg;
   }
 }
 
 //tutorial end
+
+//footer start
+
+.footer {
+  background-color: $bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 80px;
+  }
+}
+
+.footer__copy {
+  border-top: 1px solid #424d53;
+}
+.footer__copy-text {
+  text-align: center;
+  color: #919699;
+  font-size: 15px;
+  line-height: 36px;
+  padding: 25px 0 30px;
+}
+
+.footer__col {
+  max-width: 270px;
+  width: 100%;
+  &-menu {
+    max-width: 220px;
+  }
+  &-title {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 51px;
+      height: 3px;
+      background-color: $green;
+      left: 2px;
+    }
+  }
+  &-text{
+    color: #b7c3c8;
+    margin-bottom: 30px;
+  }
+
+}
+.footer__info{
+  margin-top: 10px;
+  color: #fff;
+  padding-left: 30px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content:'\f041';
+    font-family: 'icomoon';
+    color: $green;
+    font-size: 18px;  
+    left: 0;
+  }
+
+}
+
+.footer__info-phone{ 
+  &::before{
+    content: '\f095';
+  }
+}
+
+.footer__col-list{
+  a{
+    margin-bottom: 15px;
+    color: #b7c3c8;
+    padding-left: 22px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: '\f105';
+      color: $green;
+      font-size: 18px;
+      font-family: 'icomoon';
+      left: 0;
+      top: -2px;
+    }
+  }
+}
+.footer__social-link{
+  margin-bottom: 33px;
+  li{
+    display: inline-block;
+    &+li{
+      margin-left: 7px;
+    }
+  }
+  a{ 
+    width: 28px;
+      height: 28px;
+      background-image: url(../images/content/css_sprites.png);
+  }
+}
+.link-twitter{
+
+  background-position: -34px 0;
+
+}
+.link-youtube{
+  background-position: -2px -32px;
+}
+.link-pinterest{
+  background-position: -34px -32px;
+}
+.link-linkedin{
+  background-position: -66px 0px;
+}
+
+.footer__form-title{
+
+color: #ffffff;
+font-size: 20px;
+margin-bottom: 15px;
+
+
+}
+.footer__form{
+  position: relative;
+  input{
+    background-color: #2f3c43;
+    border: none;
+    display: block;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    padding-left: 13px;
+    padding-right: 50px;
+    width: 100%;
+    &::placeholder{
+      color: #697378;
+    }
+  }
+  button{
+position: absolute;
+bottom: 0;
+right: 0;
+background-color: $green;
+border: none;
+height: 40px;
+width: 43px;
+cursor: pointer;
+&::before{
+  content: "\f124";
+  position: absolute;
+  font-family: 'icomoon';
+  color: #fff;
+  font-size: 22px;
+  top: 9px;
+  left: 13px;
+}
+  }
+}
+//footer end
