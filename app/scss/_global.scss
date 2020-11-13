@@ -55,3 +55,15 @@ body {
     line-height: 60px;
     margin-bottom: 30px;
 }
+.angle-right{
+  padding-left: 15px;
+  position: relative;
+  &::before{
+position: absolute;
+content: "\f105";
+font-family: 'icomoon';
+left: 0;
+color: $green;
+font-size: 14px;
+  }
+}
